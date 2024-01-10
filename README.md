@@ -1,1 +1,3 @@
-this is a readme.md file
+This is a Bookbot.
+
+Bookbot can count letter and words.
