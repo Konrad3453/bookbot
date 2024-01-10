@@ -1,3 +1,3 @@
 This is a Bookbot.
 
-Bookbot can count letter and words.
+Bookbot can count letters and words.
