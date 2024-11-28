@@ -14,12 +14,20 @@ def charCount(text):
             alphabet[to_lower] =1
     return alphabet
 
+def printReport(book, words, countWords):
+    print(f""" --- Begin report of {book} ---
+    {words} words found in the document """)
+    for key, value in countWords.items():
+        print(f"The '{key}' character was found {value} times")
 
+    print("--- End report ---")
+    
 def main():
     
     path_to_file = "books/frankenstein.txt"
     with open(path_to_file) as f:
         file_contents = f.read()
-    print(count(file_contents))
-    print(charCount(file_contents))
+    words = count(file_contents)
+    countWords = charCount(file_contents)
+    printReport(path_to_file, words, countWords)
 main()
